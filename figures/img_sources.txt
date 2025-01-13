@@ -1,0 +1,11 @@
+Beatles:
+http://toddhancock.ca/wp-content/uploads/2016/07/beatles-h.jpg
+accessed: 10.10.2023
+
+Kiss:
+https://s3.amazonaws.com/busites_www/kissonline/content/articles/belgium.jpg
+accessed: 10.10.2023
+
+Bob Dylan:
+https://images-na.ssl-images-amazon.com/images/I/81QSFPV7TtL._AC_SL1500_.jpg
+accessed: 10.10.2023
