@@ -13,8 +13,8 @@ st.set_page_config(
 st.write("# Linear Regression - Task 2")
 st.write("## Housing Data")
 
-st.markdown("""In the lecture you have seen the famous Housing Price Dataset. The goal is to predict the price of a house based on some features like the number of bedrooms, the area, and so on.<br>Now you get the chance to play around with this dataset. The goal of this task is to find the optimal solution (as you learned in the lecture) to a regression problem. In other words, find $\mathbf{w}^*$ given by $$\mathbf{w}^* = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$$\n
-To make it a bit easier, you only have to use the feature *area*. Calculate $\mathbf{w}^*$ for the first eight data points of the dataset and then select your $w_0$ and $w_1$. "Show optimal solution" displays the linear fit for the whole (training) data set (based on the feature area).""")
+st.markdown("""You have seen the famous Housing Price Dataset. The goal is to predict the price of a house based on some features like the number of bedrooms, the area, and so on.<\br>Now you get the chance to play around with this dataset. The goal of this task is to find the optimal solution to a regression problem by adjusting the paramaters of the model.
+To make it a bit easier, you only have to use the feature *area*. Calculate $\mathbf{w}^*$ (in German: Anstieg $w_1$ und Schnittpunkt mit y-Achse $w_0$) for the first eight data points of the dataset and then select your $w_0$ and $w_1$. "Show optimal solution" displays the linear fit for the whole (training) data set (based on the feature area).""")
 st.markdown("""*Hint: Closely look at the y-axis and observe that the price displayed is divided by 1000.*""")
 
 
@@ -25,8 +25,8 @@ train = data[50:]
 test = data[:50]
 st.dataframe(data.head())
 
-w0 = st.number_input("w₀", min_value=-5000000, max_value=5000000, value=0)
-w1 = st.number_input("w₁", min_value=-500, max_value=2000, value=0)
+w0 = st.number_input("Intercept w₀ (x 1000)", min_value=-5000000, max_value=5000000, value=0) * 1000
+w1 = st.number_input("Slope w₁", min_value=-500, max_value=2000, value=0)
 opt_solution = st.checkbox("Show optimal solution")
 
 

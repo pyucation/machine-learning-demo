@@ -2,11 +2,11 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="AICP - Welcome",
+    page_title="Pyucation Exercises - Welcome",
     page_icon="👋",
 )
 
-st.write("# Welcome to the TUM AI Competence Center")
+st.write("# Welcome to pyucation!")
 st.write("## Linear Regression")
 st.sidebar.success("Select a Task above.")
 

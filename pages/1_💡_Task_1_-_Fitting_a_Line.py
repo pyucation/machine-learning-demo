@@ -5,14 +5,14 @@ from sklearn.linear_model import LinearRegression
 
 
 st.set_page_config(
-    page_title="Linear Regression - Task 1",
+    page_title="Linear Regression",
     page_icon="💡",
 )
 
 st.write("# Linear Regression - Task 1")
 st.write("## Fitting a Line")
 
-st.markdown("""In the plot below you can see some randomly generated data points as well as a linear fit of the data points using the linear regression you have seen in the lecture. Change the slider value on the left to increase/decrease the number of data points. Observe how the linear fit changes.""")
+st.markdown("""In the plot below you can see some randomly generated data points as well as a linear fit of the data points using the linear regression. Change the slider value on the left to increase/decrease the number of data points. Observe how the linear fit changes.""")
 
 
 
