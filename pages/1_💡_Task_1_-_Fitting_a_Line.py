@@ -57,6 +57,5 @@ fig.update_layout(title="Linear Regression Fit", xaxis_title="x", yaxis_title="y
 
 st.plotly_chart(fig)
 
-st.text(f"Slope (Steigung): {round(reg.coef_[0][0], 3)}\t\t"
-        + f"Intercept (Schnittpunkt m. y-Achse): {round(reg.intercept_[0], 3)}",
-            )
+st.text(f"Slope (Steigung): {round(reg.coef_[0][0], 3)}")
+st.text(f"Intercept (Schnittpunkt m. y-Achse): {round(reg.intercept_[0], 3)}")
